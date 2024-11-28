@@ -17,6 +17,10 @@ body {
   @apply size-full;
 }
 
+img {
+  border-radius: 8px;
+}
+
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;

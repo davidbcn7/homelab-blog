@@ -1,0 +1,121 @@
+---
+title: "Setting Up Tailscale VPN: Secure Your Network and Access It Remotely"
+description: "Learn how to set up Tailscale VPN on Proxmox using a Debian LXC container. Protect your network from unauthorized access while enabling secure remote connections to your local resources."
+date: "2024-11-28"
+---
+
+import Callout from "@/components/Callout.astro";
+
+---
+
+## First of all, what is Tailscale? 🤔
+
+[Tailscale](https://tailscale.com/) is a zero-config VPN based on [WireGuard](https://www.wireguard.com/) that makes securing your network easier than ever. Unlike traditional VPNs, Tailscale automatically handles networking, encryption, and peer-to-peer connections. It allows you to access your devices and resources as if you were physically at home, even when you're far away.
+
+### Why should you use Tailscale? 🔒
+
+Tailscale offers a modern, secure, and easy-to-use VPN solution with several key benefits:
+
+#### 1. **Quick Setup**
+No complicated configurations. Just install and go.
+
+#### 2. **Zero-Configuration Mesh Network**
+Automatically connects your devices without complex setup.
+
+#### 3. **End-to-End Encryption**
+Your data is secure with WireGuard's strong encryption.
+
+#### 4. **Identity-Based Access Control**
+Easily manage who can access your network using services like Google or Microsoft.
+
+#### 5. **Seamless Remote Access**
+Access your devices securely from anywhere, no port forwarding needed.
+
+#### 6. **Split-Tunneling**
+Optimize performance by routing only necessary traffic through the VPN.
+
+#### 7. **Cross-Platform Compatibility**
+Works across Linux, Windows, macOS, iOS, and Android.
+
+#### 8. **Scalable**
+Grows with your needs, from small setups to large networks.
+
+<Callout>
+In summary, Tailscale offers simplicity, security, and flexibility, making it the perfect VPN solution for those who need secure remote access without the headaches of traditional VPN setups.
+</Callout>
+
+---
+
+## Installing Tailscale on Proxmox with a Debian LXC Container 🚀
+
+[Giscus](https://giscus.app) leverages Github discussions to act as a comments system. To get Giscus working on your own website, see [here](/blog/01-getting-started#deploy-the-site).
+
+---
+
+## Callout component 🆕
+
+<Callout>
+  Adipisicing et officia reprehenderit fugiat occaecat cupidatat exercitation
+  labore consequat ullamco nostrud non.
+</Callout>
+
+<Callout type="info">
+  Adipisicing et officia reprehenderit fugiat occaecat cupidatat exercitation
+  labore consequat ullamco nostrud non.
+</Callout>
+
+<Callout type="warning">
+  Adipisicing et officia reprehenderit fugiat occaecat cupidatat exercitation
+  labore consequat ullamco nostrud non.
+</Callout>
+
+<Callout type="error">
+  Adipisicing et officia reprehenderit fugiat occaecat cupidatat exercitation
+  labore consequat ullamco nostrud non.
+</Callout>
+
+---
+
+## UI enhancements 🎨
+
+- Elements are styled and animate on focus
+- Increased contrast in light mode
+- Active theme is indicated by theme buttons
+- Separate syntax highlight themes for light and dark mode
+- Code blocks have a copy button
+- Add pagination to the bottom of blog posts
+- Create 404 page
+- Add ToC component to posts
+
+---
+
+## Other changes
+
+- Change fonts to Geist Sans and Geist Mono
+- Switch base color from "stone" to "neutral"
+- Change formatted date to use "long" option for month
+- Minor spacing changes throughout
+- Remove "work" collection and components
+  - If desired, you can get the code from [Astro Nano](https://github.com/markhorn-dev/astro-nano)
+- Slightly increased link decoration offset
+- Slightly sped-up animations
+- Reversed animation
+- Ensure posts use an h1 tag for post titles
+- Tweaked typography
+
+---
+
+## Issues ⚠️
+
+### Active issues
+
+- [PostNavigation.astro is broken when deployed with Cloudflare Pages](https://github.com/trevortylerlee/astro-micro/issues/39)
+
+### Closed issues
+
+- Fixed by [blopker](https://github.com/blopker): [Pagefind requires a refresh to function when ViewTransitions is enabled](https://github.com/trevortylerlee/astro-micro/issues/7)
+- Fixed by [blopker](https://github.com/blopker): [ToC links are obscured by Header when scrolled to](https://github.com/trevortylerlee/astro-micro/issues/4)
+- Fixed by [cgranier](https://github.com/cgranier): [Pagination links advance by slug/folder](https://github.com/trevortylerlee/astro-micro/issues/26)
+- Fixed by [cgranier](https://github.com/cgranier): [Hides Table of Contents when there are no headings](https://github.com/trevortylerlee/astro-micro/pull/30)
+- Fixed by [arastoonet](https://github.com/arastoonet): [Fix typo in README](https://github.com/trevortylerlee/astro-micro/pull/19)
+- Fixed by [luciancah](https://github.com/luciancah): [Prevent Pagefind from double-indexing results](https://github.com/trevortylerlee/astro-micro/issues/40)

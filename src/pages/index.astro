@@ -6,6 +6,7 @@ import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import Callout from "@/components/Callout.astro";
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
@@ -79,6 +80,9 @@ const projects: CollectionEntry<"projects">[] = (
             </h2>
             <Link href="/projects"> See all projects </Link>
           </div>
+          <Callout type="info">
+            I'm working on it! 🚀
+          </Callout>
           <ul class="not-prose flex flex-col gap-4">
             {
               projects.map((project) => (

@@ -5,6 +5,7 @@ date: "2024-11-28"
 ---
 
 import Callout from "@/components/Callout.astro";
+import Link from "@components/Link.astro";
 
 ---
 
@@ -12,17 +13,17 @@ import Callout from "@/components/Callout.astro";
 
 ## Why I Chose the BMAX B4 Plus 🖥️
 
-During the Black Friday sales, I came across an amazing deal on AliExpress: the [BMAX B4 Plus](https://aliexpress.com/item/1005007036843065.html), a compact Mini PC with an [Intel N100](https://www.intel.com/content/www/us/en/products/sku/231803/intel-processor-n100-6m-cache-up-to-3-40-ghz/specifications.html) processor, 16GB of RAM, and a 512GB M.2 SATA SSD—all for just **€112**. The specs immediately caught my attention as a potential homelab setup, and I couldn’t resist the opportunity to experiment.
+During the Black Friday sales, I came across an amazing deal on AliExpress: the <Link href="https://aliexpress.com/item/1005007036843065.html" external={true}>BMAX B4 Plus</Link>, a compact Mini PC with an <Link href="https://www.intel.com/content/www/us/en/products/sku/231803/intel-processor-n100-6m-cache-up-to-3-40-ghz/specifications.html" external={true}>Intel N100</Link> processor, 16GB of RAM, and a 512GB M.2 SATA SSD—all for just **€112**. The specs immediately caught my attention as a potential homelab setup, and I couldn’t resist the opportunity to experiment.
 
 ---
 
 ## First Steps: Installing Proxmox VE 🛠️
 
-As soon as I received the Mini PC, I installed [Proxmox VE](https://www.proxmox.com/en/proxmox-virtual-environment/overview), a powerful virtualization platform. My goal was to turn this budget device into a multifunctional homelab capable of running:
+As soon as I received the Mini PC, I installed <Link href="https://www.proxmox.com/en/proxmox-virtual-environment/overview" external={true}>Proxmox VE</Link>, a powerful virtualization platform. My goal was to turn this budget device into a multifunctional homelab capable of running:
 
-- A multimedia server with [Jellyfin](https://jellyfin.org/) and the *ARR stack ([Sonarr](https://sonarr.tv/), [Radarr](https://radarr.video/), [Overseerr](https://overseerr.dev/), etc.).
-- Network tools like [AdGuard Home](https://adguard.com/en/adguard-home/overview.html).
-- Secure password management with [Vaultwarden](https://github.com/dani-garcia/vaultwarden).
+- A multimedia server with <Link href="https://jellyfin.org/" external={true}>Jellyfin</Link> and the *ARR stack (<Link href="https://sonarr.tv/" external={true}>Sonarr</Link>, <Link href="https://radarr.video/" external={true}>Radarr</Link>, <Link href="https://overseerr.dev/" external={true}>Overseerr</Link>, etc.).
+- Network tools like <Link href="https://adguard.com/en/adguard-home/overview.html" external={true}>AdGuard Home</Link>.
+- Secure password management with <Link href="https://github.com/dani-garcia/vaultwarden" external={true}>Vaultwarden</Link>.
 - And much more!
 
 Proxmox VE allowed me to manage virtual machines and Linux containers easily, making it the perfect choice for this project.

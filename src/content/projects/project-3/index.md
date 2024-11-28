@@ -1,9 +1,10 @@
 ---
-title: "Astro Micro"
+title: "Moneta"
 description: "Astro Micro is an accessible and lightweight blog."
-date: "2024-05-26"
+date: "2024-11-28"
 demoURL: "https://astro-micro.vercel.app"
 repoURL: "https://github.com/trevortylerlee/astro-micro"
+draft: true
 ---
 
 ![Astro Micro](/astro-micro.jpg)
